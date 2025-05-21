@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shein</title>
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+      <div class="logo-nombre">
+        <img src="imagenes/shein.png" alt="Logo de la tienda" class="logo">
+        <h1 class="nombre-tienda">Shein</h1>
+      </div>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+ 
+<button onclick="verCarrito()" style="position: fixed; top: 20px; right: 20px;">🛒(<span id="contadorCarrito">0</span>)</button>
+<div id="modalCarrito" class="modal">
+  <div class="modal-content" id="contenidoCarrito">
+    <span class="close-modal" onclick="cerrarCarrito()">×</span>
+    <h2>Carrito</h2>
+    <div id="listaCarrito"></div>
+    <p><strong>Total: $<span id="totalCarrito">0</span></strong></p>
+  </div>
+</div>
+ </header>
+ <div class="contenido">
+ <section id="inicio" class="seccion inicio-home">
+  <div class="banner">
+    <img src="imagenes/banner1.jpg" alt="Banner 1">
+    <img src="imagenes/banner2.jpg" alt="Banner 2">
+  </div>
+
+  <div class="promociones">
+    <h2>Promociones del Mes</h2>
+    <div class="promo-cards">
+      <div class="promo-card">
+        <h3>50% OFF en Ropa de Verano</h3>
+        <p>Descubre la nueva colección fresca y cómoda.</p>
+      </div>
+      <div class="promo-card">
+        <h3>2x1 en Accesorios</h3>
+        <p>Llévate tus accesorios favoritos al mejor precio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+ <section id="productos">
+<h1>Productos</h1>
+  <div id="productsContainer"></div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content" id="modalContent">
+      <span class="close-modal" onclick="cerrarModal()">×</span>
+    </div>
+  </div>
+  </section>
+  <section id="contacto" class="seccion">
+  <h2>Contáctanos</h2>
+  <div class="contact-columns">
+    <div class="column">
+      <h3>Contacto</h3>
+      <ul>
+        <li>
+          <img src="imagenes/telefono.png" alt="Teléfono" class="icono">
+          +57 3186322746
+        </li>
+        <li>
+          <img src="imagenes/correo.jpg" alt="Email" class="icono">
+          contacto@shein.com
+        </li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Redes Sociales</h3>
+      <ul>
+        <li>
+          <img src="imagenes/instagram.jpg" alt="Instagram" class="icono">
+          <a href="https://www.instagram.com/sheinofficial/" target="_blank">@sheinofficial
+        </li>
+        <li>
+          <img src="imagenes/facebook.png" alt="Facebook" class="icono">
+          <a href="https://www.facebook.com/SHEINOFFICIAL/" target="_blank">Shein Oficial</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h3>Mensajería y Videos</h3>
+      <ul>
+        <li>
+          <img src="imagenes/whatsapp.png" alt="WhatsApp" class="icono">
+          <a href="https://wa.me/573186322746" target="_blank">+57 3186322746</a>
+        </li>
+        <li>
+          <img src="imagenes/youtube.png" alt="YouTube" class="icono">
+          <a href="https://www.youtube.com/@SHEINOFFICIAL" target="_blank">Shein</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
