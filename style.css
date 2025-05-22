@@ -1,11 +1,10 @@
-/* Reset básico */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos generales */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #ffffff;
@@ -19,7 +18,6 @@ body {
   padding: 1rem;
 }
 
-/* Encabezado y navegación */
 .header {
   background-color: #ffffff;
   border-bottom: 2px solid #000000;
@@ -65,7 +63,7 @@ body {
   color: #0066ff;
 }
 
-/* Botón carrito */
+
 button {
   background-color: #0066ff;
   color: white;
@@ -79,7 +77,6 @@ button {
   padding-top: 190px;
 }
 
-/* Secciones */
 .seccion {
   padding: 2rem 0;
   border-bottom: 1px solid #ddd;
@@ -90,7 +87,6 @@ button {
   margin-bottom: 1rem;
 }
 
-/* Tarjetas de productos */
 .product-card {
   border: 1px solid #ccc;
   padding: 10px;
@@ -154,7 +150,6 @@ button {
   border-radius: 4px;
 }
 
-/* Modal general */
 .modal {
   display: none;
   position: fixed;
@@ -192,7 +187,6 @@ button {
   color: red;
 }
 
-/* Íconos de contacto */
 .icono {
   width: 24px;
   height: 24px;
@@ -200,7 +194,7 @@ button {
   margin-right: 8px;
 }
 
-/* Contacto en columnas */
+
 .contact-columns {
   display: flex;
   flex-wrap: wrap;
@@ -235,7 +229,7 @@ button {
   color: #0066ff;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .navegacion ul {
     flex-direction: column;
